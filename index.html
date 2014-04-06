@@ -62,6 +62,16 @@
       
     </section>
 	<section>
+		Hello I have Notes. Press 's' to view
+		<aside class="notes">
+        I'm your Notes :)
+    </aside>
+	</section>
+        <section>
+		<p>Math Formula</p> 
+		$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$
+	</section>
+	<section>
 		jQuery Code Sample
 		<pre>
 			<code>
@@ -72,10 +82,11 @@ $(function () {
 });
 			</code>
 		</pre>
-		<aside class="notes">
-        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-    </aside>
+		
 	</section>
+        <section>
+		Thank You :)
+        </section>
   </div>
 </div>
 
@@ -100,6 +111,12 @@ $(function () {
         id: 'c6dc216ec61365eb', // Obtained from socket.io server
         url: 'revealjs.jit.su:80' // Location of socket.io server
     },
+math: {
+    mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+    config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+  },
+
+  
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
 				// parallaxBackgroundSize: '2100px 900px',
@@ -116,7 +133,8 @@ $(function () {
         { src: 'plugin/multiplex/master.js', async: true },
 
         // and if you want speaker notes
-        { src: 'plugin/notes-server/client.js', async: true }
+        { src: 'plugin/notes-server/client.js', async: true },
+        { src: 'plugin/math/math.js', async: true }
 				]
 			});
 
