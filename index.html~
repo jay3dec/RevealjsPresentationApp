@@ -96,8 +96,8 @@ $(function () {
 				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
 				multiplex: {
         // Example values. To generate your own, see the socket.io server instructions.
-        secret: '13967773486226648665', // Obtained from the socket.io server. Gives this (the master) control of the presentation
-        id: 'c6dc216ec61365eb', // Obtained from socket.io server
+        secret: '13652805320794272084', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+        id: '1ea875674b17ca76', // Obtained from socket.io server
         url: 'revealjs.jit.su:80' // Location of socket.io server
     },
 				// Parallax scrolling
